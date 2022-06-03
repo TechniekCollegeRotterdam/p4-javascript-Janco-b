@@ -12,17 +12,21 @@ window.addEventListener("keydown", function (e){
     if(e.key == "ArrowRight"){
         count += 20;
         bird.style.left = count + "px";
+        bird.src = "img/b-right.svg";
     }
     if(e.key == "ArrowLeft"){
         count -= 20;
         bird.style.left = count + "px";
+        bird.src = "img/b-left.svg";
     }
     if(e.key == "ArrowUp"){
         count += 20;
         bird.style.bottom = count + "px";
+        bird.src = "img/b-up.svg";
     }
     if(e.key == "ArrowDown"){
-        count += 20;
-        bird.style.top = count + "px";
+        count -= 20;
+        bird.style.bottom = count + "px";
+        bird.src = "img/b-down.svg";
     }
 });
